@@ -1,4 +1,4 @@
-import React, {component, Component} from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -7,8 +7,10 @@ import { actionIncrement } from '../src/_actions/counter'
 
 
  class Counter extends Component {
-  render() {   
+  render() {
+    console.log(this.props.counter.number)   
   return (
+
     <div className="App">
       <header className="App-header">
         <h1>{this.props.counter.number}</h1>
